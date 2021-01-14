@@ -28,3 +28,7 @@ Testar
 ```npm
 node connect.js
 ```
+
+### Operator Aliases
+
+[Link](https://sequelize.org/v5/manual/querying.html)

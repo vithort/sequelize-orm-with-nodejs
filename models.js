@@ -48,7 +48,7 @@ const Season = db.define('season', {
 });
 
 const Batch = db.define('batch', {
-  id: {
+  code: {
     type: DataTypes.STRING(8),
     primaryKey: true,
   },

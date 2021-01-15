@@ -47,6 +47,21 @@ app.post('/batchcode', async (req, res) => {
     console.error(error);
   }
 });
+
+app.get('/batches', async (req, res) => {
+  try {
+    const batches = await Batch.findAll({
+      include: [Course, Season, Center],
+    });
+    batches.forEach((element) => {
+      console.log(JSON.stringify(element));
+    });
+    res.render('batches', { batches });
+  } catch (error) {
+    console.error(error);
+  }
+});
+
 module.exports = {
   app,
 };

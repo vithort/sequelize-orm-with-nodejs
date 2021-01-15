@@ -38,3 +38,15 @@ Instalar
 ```npm
 npm i express hbs --save
 ```
+
+Executar Querys
+
+```npm
+node seed.js
+```
+
+Executar API
+
+```npm
+node run.js
+```
